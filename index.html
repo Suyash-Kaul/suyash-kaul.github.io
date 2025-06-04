@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> 
+    
+  <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script src="https://unpkg.com/@popperjs/core@2" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+
+    <title>Vailexa | Staffing & Recruitment</title>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="images/Vailexa_logo_white.png" alt="Vailexa Logo">
+        <div class="nav-links">
+            <div class="dropdown">
+                <a class="dropdown" href="#solutions">Solutions</a>
+                <div class="dropdown-content">
+                    <a href="#">Artificial Intelligence</a>
+                    <a href="#">Blockchain Automation</a>
+                    <a href="#">Cloud Application Services</a>
+                    <a href="#">Cyber Security</a>
+                    <a href="#">Data Analytics</a>
+                    <a href="#">DevOps & SecOps</a>
+                    <a href="#">Machine Learning</a>
+                    <a href="#">iOS & Android</a>
+                    <a href="#">Mainframe Modernization</a>
+                    <a href="#">Product Engineering</a>
+                    <a href="#">Manual & Automation Testing</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown" href="#services">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">Managed Services</a>
+                    <a href="#">Staffing Solutions</a>
+                    <a href="#">IT Services & Resourcing</a>
+                    <a href="#">Implementation Services</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown" href="#industry">Industry</a>
+                <div class="dropdown-content">
+                    <a href="#">Retail</a>
+                    <a href="#">Automotive & Manufacturing</a>
+                    <a href="#">Banking & Financial</a>
+                    <a href="#">Information Technology</a>
+                    <a href="#">Energy & Utilities</a>
+                    <a href="#">Healthcare & Pharmaceuticals</a>
+                    <a href="#">Hospitality</a>
+                    <a href="#">Insurance</a>
+                    <a href="#">Communications</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown" href="#about">About Us</a>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown" href="#careers">Careers <span>Always Hiring!</span></a>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown" href="#contact-us">Contact Us</a>
+            </div>
+            <!-- <div class="dropdown">
+                <button class="find-job">Work with Us</button>
+            </div> -->
+        </div>
+    </nav>
+    <section class="hero">
+        <p></p>
+        <!-- <h1>Welcome to Vailexa Technologies</h1> -->
+        <!-- <p>Delivering intelligent staffing, recruitment, and IT solutions tailored to your success.</p> -->
+        <!-- <p>Your trusted partner in staffing and recruitment solutions.</p> -->
+    </section>
+    
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2 class="services-title" data-aos="fade-right">What can we do for you?</h2>
+        <div class="services-grid">
+          <div class="service-box" data-aos="flip-left">
+            <h3 class="service-title">Staffing Solutions</h3>
+            <p class="service-text">Connecting the best talent with top companies using advanced tech.</p>
+          </div>
+          <div class="service-box" data-aos="flip-left" data-aos-delay="200">
+            <h3 class="service-title">Management Services</h3>
+            <p class="service-text">Smooth and Efficient management for your finances, softwares and machinery</p>
+          </div>
+          <div class="service-box" data-aos="flip-left" data-aos-delay="400">
+            <h3 class="service-title">IT Services & Resourcing</h3>
+            <p class="service-text">Modern IT strategies tailored to your business growth.</p>
+          </div>
+          <div class="service-box" data-aos="flip-left" data-aos-delay="600">
+            <h3 class="service-title">Implementation Services</h3>
+            <p class="service-text">Installation of latest technologies for your applications and softwares.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Slideshow Section -->
+<!-- <section id="slideshow" class="py-20 bg-gray-900 text-center">
+    <h2 class="text-3xl font-bold text-white mb-10" data-aos="fade-up">Our Solutions in Action</h2>
+    <div class="relative" x-data="{
+      activeIndex: 0,
+      slides: ['images/retail.jpeg', 'images/automotive.jpeg', 'images/slide3.jpg'],
+      interval: null,
+      startAutoplay() {
+        this.interval = setInterval(() => {
+          this.activeIndex = (this.activeIndex + 1) % this.slides.length;
+        }, 3000);
+      },
+      stopAutoplay() {
+        clearInterval(this.interval);
+      },
+      toggleAutoplay() {
+        if (this.interval) {
+          this.stopAutoplay();
+        } else {
+          this.startAutoplay();
+        }
+      }
+    }" x-init="startAutoplay()">
+      <div class="relative h-64 md:h-96 overflow-hidden rounded-xl">
+        <img :src="slides[activeIndex]" alt="Slide" class="object-cover w-full h-full transition-all duration-500">
+      </div>
+      
+      
+      <div class="absolute inset-0 flex justify-between items-center px-6 py-4">
+        <button @click="activeIndex = (activeIndex - 1 + slides.length) % slides.length" class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition duration-300">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div>
+          <button @click="toggleAutoplay()" class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition duration-300">
+            <i :class="interval ? 'fas fa-pause' : 'fas fa-play'"></i>
+          </button>
+        </div>
+        <button @click="activeIndex = (activeIndex + 1) % slides.length" class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition duration-300">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section> -->
+  
+
+    <section class="staffing-slider">
+        <div id="slide" class="staffing-slider-div">
+            <h2 class="slider-text">Need help in staffing a project?</h2>
+            <p class="slider-text">We are here to build your team with exceptional consultants for your new and existing projects.</p>
+
+            <p class="slider-text">We are here to help you with all your staffing needs.</p>
+
+            <p class="slider-text">We will make your work easy and faster.</p>
+
+            <p class="slider-text">Please <a href="contact-us.html">contact with us</a> for more details.</p>
+        </div>
+        <!-- <div  class="slide"></div> -->
+        <!-- <div  class="slide"></div> -->
+    </section>
+    
+    
+    <!-- Slider Test START -->
+    <section class="solutions-slider-section">
+        <h2 class="solutions-title">Innovative Tech Solutions</h2>
+        <div class="slider-container">
+          <div class="slider-track">
+            <div class="slide">
+              <a href="retail.html"><img src="images/AdobeStock_1236122492_Preview.jpeg" alt="retail" /></a>
+              <p>Artificial Intelligence</p>
+            </div>
+            <div class="slide">
+              <a href="automotive.html"><img src="images/AdobeStock_769721663_Preview.jpeg" alt="automotive" /></a>
+              <p>Blockchain Automation</p>
+            </div>
+            <div class="slide">
+              <a href="banking.html"><img src="images/AdobeStock_566495404_Preview.jpeg" alt="banking" /></a>
+              <p>Cloud Application Services</p>
+            </div>
+            <div class="slide">
+              <a href="IT.html"><img src="images/AdobeStock_642102009_Preview.jpeg" alt="IT" /></a>
+              <p>Cyber Security</p>
+            </div>
+            <div class="slide">
+              <a href="energy.html"><img src="images/AdobeStock_913779463_Preview.jpeg" alt="energy" /></a>
+              <p>Data Analytics</p>
+            </div>
+            <div class="slide">
+              <a href="healthcare.html"><img src="images/AdobeStock_649759829_Preview.jpeg" alt="healthcare" /></a>
+              <p>DevOps & SecOps</p>
+            </div>
+            <div class="slide">
+              <a href="hospitality.html"><img src="images/AdobeStock_986060761_Preview.jpeg" alt="hospitality" /></a>
+              <p>Machine Learning</p>
+            </div>
+            <div class="slide">
+              <a href="insurance.html"><img src="images/AdobeStock_322689260_Preview.jpeg" alt="insurance" /></a>
+              <p>iOS & Android</p>
+            </div>
+            <div class="slide">
+              <a href="communications.html"><img src="images/AdobeStock_628786550_Preview.jpeg" alt="communications" /></a>
+              <p>Mainframe Modernization</p>
+            </div>
+            <div class="slide">
+              <a href="communications.html"><img src="images/AdobeStock_631862884_Preview.jpeg" alt="communications" /></a>
+              <p>Product Engineering</p>
+            </div>
+            <div class="slide">
+              <a href="communications.html"><img src="images/AdobeStock_981270791_Preview.jpeg" alt="communications" /></a>
+              <p>Manual & Automation Testing</p>
+            </div>
+          </div>
+        </div>
+    </section> 
+    <!-- Slider Test END -->
+
+    <!-- Slider Test 2 START -->
+    <section class="solutions-slider-section2">
+        <h2 class="solutions-title2">Offering Abundant Services</h2>
+        <div class="slider-container2">
+          <div class="slider-track2">
+            <div class="slide2">
+              <a href="#"><img src="images/AdobeStock_691918016_Preview.jpeg" alt="retail" /></a>
+              <p>Managed Services</p>
+            </div>
+            <div class="slide2">
+              <a href="#"><img src="images/AdobeStock_1440063086_Preview.jpeg" alt="automotive" /></a>
+              <p>Staffing Solutions</p>
+            </div>
+            <div class="slide2">
+              <a href="#"><img src="images/AdobeStock_1083682442_Preview.jpeg" alt="banking" /></a>
+              <p>IT Services & Resourcing</p>
+            </div>
+            <div class="slide2">
+              <a href="#"><img src="images/AdobeStock_869810907_Preview.jpeg" alt="IT" /></a>
+              <p>Implementation Services</p>
+            </div>
+          </div>
+        </div>
+    </section> 
+    <!-- Slider Test 2 END -->
+
+    <!-- Slider Test 3 START -->
+    <section class="solutions-slider-section3">
+        <h2 class="solutions-title3">Hire for your Industry</h2>
+        <div class="slider-container3">
+          <div class="slider-track3">
+            <div class="slide3">
+              <a href="retail.html"><img src="images/AdobeStock_627919780_Preview.jpeg" alt="retail" /></a>
+              <p>Retail & CPG</p>
+            </div>
+            <div class="slide3">
+              <a href="automotive.html"><img src="images/AdobeStock_305628557_Preview.jpeg" alt="automotive" /></a>
+              <p>Automotive & Manufacturing</p>
+            </div>
+            <div class="slide3">
+              <a href="banking.html"><img src="images/AdobeStock_257219192_Preview.jpeg" alt="banking" /></a>
+              <p>Banking & Financial Services</p>
+            </div>
+            <div class="slide3">
+              <a href="IT.html"><img src="images/IT.jpeg" alt="IT" /></a>
+              <p>Information Technology</p>
+            </div>
+            <div class="slide3">
+              <a href="energy.html"><img src="images/AdobeStock_543582141_Preview.jpeg" alt="energy" /></a>
+              <p>Energy, Oil & Gas and Utilities</p>
+            </div>
+            <div class="slide3">
+              <a href="healthcare.html"><img src="images/AdobeStock_1332196671_Preview.jpeg" alt="healthcare" /></a>
+              <p>Healthcare & Pharmaceuticals</p>
+            </div>
+            <div class="slide3">
+              <a href="hospitality.html"><img src="images/AdobeStock_282199916_Preview.jpeg" alt="hospitality" /></a>
+              <p>Travel, Transport & Hospitality</p>
+            </div>
+            <div class="slide3">
+              <a href="insurance.html"><img src="images/AdobeStock_491797176_Preview.jpeg" alt="insurance" /></a>
+              <p>Insurance</p>
+            </div>
+            <div class="slide3">
+              <a href="communications.html"><img src="images/communications.jpeg" alt="communications" /></a>
+              <p>Communications & Media</p>
+            </div>
+          </div>
+        </div>
+    </section> 
+    <!-- Slider Test 3 END -->
+
+    <!-- <section class="industry-slider">
+        <h2 class="solutions-title">Industry</h2>
+        <div class="slider-track">
+            <div class="slider-container">
+                <a href=""><img src="images/retail.jpeg" alt=""></a>
+            </div>
+            <div class="slider-container">
+                <a href=""><img src="images/automotive.jpeg" alt=""></a>
+            </div>
+            <div class="slider-container">
+                <a href=""><img src="images/banking.jpeg" alt=""></a>
+            </div>
+            <div class="slider-container">
+                <a href=""><img src="images/IT.jpeg" alt=""></a>
+            </div>
+            <div class="slider-container">
+                <a href=""><img src="images/banking.jpeg" alt=""></a>
+            </div>
+            <div class="slider-container">
+                <a href=""><img src="images/energy.jpeg" alt=""></a>
+            </div>
+            <div class="slider-container">
+                <a href=""><img src="images/healthcare.jpeg" alt=""></a>
+            </div>
+            <div class="slider-container">
+                <a href=""><img src="images/insurance.jpeg" alt=""></a>
+            </div>
+            <div class="slider-container">
+                <a href=""><img src="images/communications.jpeg" alt=""></a>
+            </div>
+        </div>
+    </section>   -->
+    <section class="explore-jobs-section">
+        <h2 class="section-title">Explore Job Opportunities<br>▼</h2>
+        <div class="jobs-container">
+          
+          <div class="job-card" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="job-title">Junior Software Developer</h3>
+            <p class="job-location">📍 New York, NY</p>
+            <p class="job-type">Full-time · Remote</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+          </div>
+      
+          <div class="job-card" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="job-title">UI/UX Designer</h3>
+            <p class="job-location">📍 Austin, TX</p>
+            <p class="job-type">Contract · On-site</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+          </div>
+      
+          <div class="job-card" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="job-title">Data Analyst</h3>
+            <p class="job-location">📍 Remote</p>
+            <p class="job-type">Full-time</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+          </div>
+          <div class="job-card" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="job-title">Software Developer</h3>
+            <p class="job-location">📍 New York, NY</p>
+            <p class="job-type">Full-time · Remote</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+          </div>
+      
+          <div class="job-card" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="job-title">UI/UX Designer</h3>
+            <p class="job-location">📍 Austin, TX</p>
+            <p class="job-type">Contract · On-site</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+          </div>
+      
+          <div class="job-card" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="job-title">Data Analyst</h3>
+            <p class="job-location">📍 Remote</p>
+            <p class="job-type">Full-time</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+          </div>
+      
+        </div>
+        <a href="/careers.html" class="more-jobs-btn">More Jobs »</a>
+    </section>
+
+    <div class="social_media_links">
+        <a href="https://www.facebook.com/vailexa" title="Facebook"><img src="images/facebook.png" alt="facebook"></a>
+        <a href="https://twitter.com/vailexatech" title="Twitter"><img src="images/twitter.png" alt="twitter"></a>
+        <a href="https://www.instagram.com/vailexatechnology" title="Instagram"><img src="images/instagram.png" alt="instagram"></a>
+        <a href="https://www.linkedin.com/company/vailexa-technology" title="Linkedin"><img src="images/linkedIn.png" alt="linkedin"></a>
+    </div>
+
+    <footer class="footer">
+        <p>Contact Us: <a href="mailto:info@vailexa.com" style="color: #f4f4f4;">info@vailexa.com</a></p><br>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/vailexa"><img src="images/facebook2.png" alt="Faceboook"></a>
+            <a href="https://twitter.com/vailexatech"><img src="images/instagram2.png" alt="Instagram"></a>
+            <a href="https://www.instagram.com/vailexatechnology"><img src="images/twitter2.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/company/vailexa-technology" title="Linkedin"><img src="images/linkedin2.png" alt="linkedin"></a>
+        </div>
+        <p>Copyright © 2025 Vailexa Technology LLC, All Rights Reserved</p>
+    </footer>
+</body>
+<script>
+    let slideIndex = 0;
+    // showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    setInterval(staffingSlider, 1500);
+    let currentBg = 0;
+    function staffingSlider(){
+        let slide_div = document.getElementById("slide");
+        let backgrounds = ["url(images/staffing-bg1.png)", "url(images/staffing-bg2.png)", "url(images/staffing-bg3.png)"];
+        // slide_div.style.transition = "transform 0.5s ease-out";
+        // slide_div.style.transform = `translateX(-${currentBg*0.5}%)`;
+        // slide_div.style.transition = "transform 0.5s ease-in";
+        // slide_div.style.transform = `translateX(${currentBg*0.5}%)`;
+
+        slide_div.style.background = backgrounds[currentBg];
+        currentBg++;
+        if(currentBg>2){
+            currentBg=0;
+        }
+    }
+
+
+    const track = document.querySelector(".slider-track");
+    const slides = document.querySelectorAll(".slide");
+    const slideCount = slides.length;
+    const visibleSlides = 4;
+
+    let index = 0;
+
+    function moveSlider() {
+        index++;
+        if (index > slideCount - visibleSlides) {
+        index = 0;
+        }
+        const slideWidth = slides[0].offsetWidth; // 20 = gap
+        track.style.transform = `translateX(-${index * slideWidth}px)`;
+    }
+    setInterval(moveSlider, 3000);
+
+
+    const track2 = document.querySelector(".slider-track2");
+    const slides2 = document.querySelectorAll(".slide2");
+    const slideCount2 = slides2.length;
+    const visibleSlides2 = 4;
+
+    let index2 = 0;
+
+    function moveSlider2() {
+        index2++;
+        if (index2 > slideCount2 - visibleSlides2) {
+        index2 = 0;
+        }
+        const slideWidth2 = slides2[0].offsetWidth; // 20 = gap
+        track2.style.transform = `translateX(-${index2 * slideWidth2}px)`;
+    }
+
+  setInterval(moveSlider2, 3000);
+
+
+    const track3 = document.querySelector(".slider-track3");
+    const slides3 = document.querySelectorAll(".slide3");
+    const slideCount3 = slides3.length;
+    const visibleSlides3 = 4;
+
+    let index3 = 0;
+
+    function moveSlider3() {
+        index3++;
+        if (index3 > slideCount3 - visibleSlides3) {
+        index3 = 0;
+        }
+        const slideWidth3 = slides3[0].offsetWidth; // 20 = gap
+        track3.style.transform = `translateX(-${index3 * slideWidth3}px)`;
+    }
+
+  setInterval(moveSlider3, 3000);
+
+    AOS.init();
+    document.addEventListener("DOMContentLoaded", function(){
+        duration: 1000; // animation duration in ms
+        once: false; // whether animation should happen only once
+    });
+</script>
+</html>
