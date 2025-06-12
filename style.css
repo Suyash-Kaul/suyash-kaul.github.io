@@ -18,6 +18,52 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Cursor */
+.custom-cursor {
+  position: fixed;
+  /* top: 0; */
+  /* left: 0; */
+  width: 20px;
+  height: 20px;
+  background-color: rgba(216, 232, 238, 0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%) scale(1.5);
+  transition: transform 0.25s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+}
+
+/* Glow effect */
+.custom-cursor.glow {
+  transform: translate(-50%, -50%) scale(2);
+  box-shadow: 0 0 12px 6px rgba(0, 183, 255, 0.6),
+              0 0 20px 10px rgba(0, 183, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.custom-cursor.change-color{
+    transform: translate(-50%, -50%) scale(3);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.custom-cursor.explore-jobs-effect{
+    transform: translate(-50%, -50%) scale(2);
+    background-color: rgba(212, 208, 208, 0.4);
+}
+
+/* Button */
+.btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #00b7ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
 /********************************NAVBAR START ***********************************/
 .navbar {
     display: flex;
@@ -135,12 +181,16 @@ html{
 /****************************************** END OF NAVBAR ***********************************************/
 
 .hero{
+    background-color: #0a0f1a;
     background: url('images/hero_bg.png');
     background-size: cover;
     min-height: 40vw;
     background-attachment: fixed;
     background-position: center;
     color: rgba(0, 0, 0, 0);
+    /* filter: url(#distortFilter); */
+    will-change: transform;
+    transition: transform 0.1s ease-out;
 }
 
 
@@ -159,7 +209,7 @@ html{
     left: 0;
     /* background-size: cover; */
 }
-.slide:nth-child(1){
+/* .slide:nth-child(1){
     background-image: url(images/staffing-bg1.png);
     background-image: url(images/staffing-bg2.png);
     background-image: url(images/staffing-bg3.png);
@@ -172,7 +222,7 @@ html{
 } 
 .slider-text{
     position: sticky;
-} 
+} */
 
 @keyframes slider {
     0%, 16%, 100% {

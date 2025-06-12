@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Cursor with Glow</title>
+  <style>
+    /* Hide default cursor */
+    body {
+      margin: 0;
+      padding: 0;
+      cursor: none;
+      background: #111;
+      color: white;
+      font-family: sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /* Cursor base style */
+    .custom-cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-color: rgba(0, 183, 255, 0.8);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.15s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* Glow on hover */
+    .custom-cursor.glow {
+      transform: translate(-50%, -50%) scale(2);
+      box-shadow: 0 0 12px 6px rgba(0, 183, 255, 0.6),
+                  0 0 20px 10px rgba(0, 183, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Sample interactive element */
+    .btn {
+      padding: 15px 30px;
+      background-color: #00b7ff;
+      color: white;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hover over the button</h1>
+  <button class="btn">Hover Me</button>
+  <div class="custom-cursor"></div>
+
+  <script>
+    const cursor = document.querySelector(".custom-cursor");
+
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.top = e.clientY + "px";
+      cursor.style.left = e.clientX + "px";
+    });
+
+    const hoverTargets = document.querySelectorAll("a, button, .btn");
+    hoverTargets.forEach(el => {
+      el.addEventListener("mouseenter", () => {
+        cursor.classList.add("glow");
+      });
+      el.addEventListener("mouseleave", () => {
+        cursor.classList.remove("glow");
+      });
+    });
+  </script>
+</body>
+</html>

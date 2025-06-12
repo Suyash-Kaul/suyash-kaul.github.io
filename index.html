@@ -21,6 +21,8 @@
     <title>Vailexa | Staffing & Recruitment</title>
 </head>
 <body>
+  <div class="custom-cursor"></div>
+
     <nav class="navbar">
         <img src="images/Vailexa_logo_white.png" alt="Vailexa Logo">
         <div class="nav-links">
@@ -78,10 +80,17 @@
         </div>
     </nav>
     <section class="hero">
-        <p></p>
-        <!-- <h1>Welcome to Vailexa Technologies</h1> -->
-        <!-- <p>Delivering intelligent staffing, recruitment, and IT solutions tailored to your success.</p> -->
-        <!-- <p>Your trusted partner in staffing and recruitment solutions.</p> -->
+      <script src="hero-tilt.js"></script>
+      <svg style="display: none">
+        <filter id="distortFilter">
+          <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="2" result="turbulence"/>
+          <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="30" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </svg>
+      <p></p>
+      <!-- <h1>Welcome to Vailexa Technologies</h1> -->
+      <!-- <p>Delivering intelligent staffing, recruitment, and IT solutions tailored to your success.</p> -->
+      <!-- <p>Your trusted partner in staffing and recruitment solutions.</p> -->
     </section>
     
 
@@ -89,19 +98,19 @@
     <section id="services">
         <h2 class="services-title" data-aos="fade-right">What can we do for you?</h2>
         <div class="services-grid">
-          <div class="service-box" data-aos="flip-left">
+          <div class="service-box" data-aos="flip-up">
             <h3 class="service-title">Staffing Solutions</h3>
             <p class="service-text">Connecting the best talent with top companies using advanced tech.</p>
           </div>
-          <div class="service-box" data-aos="flip-left" data-aos-delay="200">
+          <div class="service-box" data-aos="flip-up" data-aos-delay="200">
             <h3 class="service-title">Management Services</h3>
             <p class="service-text">Smooth and Efficient management for your finances, softwares and machinery</p>
           </div>
-          <div class="service-box" data-aos="flip-left" data-aos-delay="400">
+          <div class="service-box" data-aos="flip-up" data-aos-delay="400">
             <h3 class="service-title">IT Services & Resourcing</h3>
             <p class="service-text">Modern IT strategies tailored to your business growth.</p>
           </div>
-          <div class="service-box" data-aos="flip-left" data-aos-delay="600">
+          <div class="service-box" data-aos="flip-up" data-aos-delay="600">
             <h3 class="service-title">Implementation Services</h3>
             <p class="service-text">Installation of latest technologies for your applications and softwares.</p>
           </div>
@@ -393,6 +402,7 @@
         </div>
         <p>Copyright © 2025 Vailexa Technology LLC, All Rights Reserved</p>
     </footer>
+    <script src="cursor.js"></script>
 </body>
 <script>
     let slideIndex = 0;
