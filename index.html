@@ -25,7 +25,7 @@
 
     <nav class="navbar">
         <img src="images/Vailexa_logo_white.png" alt="Vailexa Logo">
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
             <div class="dropdown">
                 <a class="dropdown" href="#solutions">Solutions</a>
                 <div class="dropdown-content">
@@ -77,13 +77,15 @@
             <!-- <div class="dropdown">
                 <button class="find-job">Work with Us</button>
             </div> -->
-        </div>
+          </div>
+          <div class="hamburger" id="hamburger">&#9776;</div>
+        <!-- <script src="navbar.js"></script> -->
     </nav>
     <section class="hero">
-      <script src="hero-tilt.js"></script>
+      <!-- <script src="hero-tilt.js"></script> -->
       <svg style="display: none">
         <filter id="distortFilter">
-          <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="2" result="turbulence"/>
+          <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="1" result="turbulence"/>
           <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="30" xChannelSelector="R" yChannelSelector="G"/>
         </filter>
       </svg>
@@ -402,6 +404,7 @@
         </div>
         <p>Copyright © 2025 Vailexa Technology LLC, All Rights Reserved</p>
     </footer>
+    <script src="navbar.js"></script>
     <script src="cursor.js"></script>
 </body>
 <script>
