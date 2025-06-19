@@ -637,6 +637,8 @@ html{
   }
   .social_media_links{
     display: none;
+    width: 0px;
+    padding: 0px;
   }
   .slide{
     flex: 0 0 32%;
