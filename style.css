@@ -638,4 +638,13 @@ html{
   .social_media_links{
     display: none;
   }
+  .slide{
+    flex: 0 0 32%;
+  }
+  .slide2{
+    flex: 0 0 49%;
+  }
+  .slide3{
+    flex: 0 0 37%;
+  }
 }
