@@ -649,4 +649,7 @@ html{
   .slide3{
     flex: 0 0 37%;
   }
+  .jobs-container{
+    max-width: 768px;
+  }
 }
