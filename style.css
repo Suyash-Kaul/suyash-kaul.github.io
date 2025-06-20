@@ -491,9 +491,9 @@ html{
 
 .jobs-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
     gap: 30px;
-    max-width: 1100px;
+    max-width: 69rem;
     margin: 0 auto;
 }
 
