@@ -652,5 +652,6 @@ html{
   }
   .jobs-container{
     max-width: 768px;
+    margin-right: 2.25rem;
   }
 }
